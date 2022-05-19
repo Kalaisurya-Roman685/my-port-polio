@@ -1,0 +1,17 @@
+.navbars-newslist {
+    width: 100%;
+    padding-bottom: 6px;
+    position: fixed;
+    top: 0px;
+    z-index:90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+    .lists
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+   
+}
+.active {
+    background-color: red;
+    color: orange;
+}

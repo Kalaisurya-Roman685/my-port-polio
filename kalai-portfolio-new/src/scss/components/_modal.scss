@@ -1,0 +1,32 @@
+@use "../abstract" as *;
+
+.modal {
+  .modal-dialog {
+    .btn-close{
+      @include themed() {
+        color: t($text-black) !important;
+        fill: t($text-black) !important;
+      }
+    }
+
+    .modal-content {
+      @include themed() {
+        background-color: t($background) !important;
+        color: t($text-black) !important;
+      }
+
+      .modal-header {
+        @include themed() {
+          background-color: t($background) !important;
+          color: t($text-black) !important;
+        }
+      }
+      .modal-body {
+        @include themed() {
+          background-color: t($background) !important;
+          color: t($text-black) !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+@use "../abstract" as *;
+
+.btn-white {
+    width: 100%;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    @include themed() {
+        background: t($background-alt) !important;
+        color: t($text-black) !important;
+        box-shadow: t($shadow-sm) !important;
+
+        &:hover {
+            background: t($secondary) !important;
+            color: t($input-focused) !important;
+        }
+    }
+}
+
+.btn-white-circle {
+    width: 100%;
+    font-weight: 500;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    @include themed() {
+        background: t($background-alt) !important;
+        color: t($text-black) !important;
+        box-shadow: t($shadow-sm) !important;
+
+        &:hover {
+            background: t($secondary) !important;
+            color: t($input-focused) !important;
+        }
+    }
+}
+
+.btn-navy-circle {
+    width: 100%;
+    font-weight: 500;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+        transition: transform 1s ease-in-out;
+    }
+
+    @include themed() {
+        background: t($secondary) !important;
+        color: t($primary) !important;
+        box-shadow: t($shadow-sm) !important;
+
+        &:hover {
+            background: t($primary) !important;
+            color: t($secondary) !important;
+
+            .fa-chevron-left {
+                transform: translateX(-1px);
+            }
+            .fa-chevron-right {
+                transform: translateX(1px);
+            }
+        }
+    }
+}
+
+.btn-navy {
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+        transition: transform 1s ease-in-out;
+    }
+
+    @include themed() {
+        background: t($secondary) !important;
+        color: t($text-white) !important;
+        box-shadow: t($shadow-sm) !important;
+
+        &:hover {
+            background: t($primary) !important;
+            color: t($secondary) !important;
+            font-weight: 500;
+
+            .fa-chevron-left {
+                transform: translateX(-1px);
+            }
+            .fa-chevron-right {
+                transform: translateX(1px);
+            }
+        }
+    }
+
+    &:disabled {
+        background: gray;
+    }
+}
+
+.btn-config {
+    width: auto;
+    min-width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        @include themed() {
+            color: t($text-hover);
+            background-color: t($secondary);
+        }
+    }
+
+    @include themed() {
+        background-color: t($button-config);
+        color: t($text);
+        box-shadow: t(shadow-sm);
+    }
+}
+
+.btn-navy-create {
+    height: 90px !important;
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+
+    @include themed() {
+        color: t($background);
+        background-color: t($secondary);
+    }
+}
+
+.btn-white-create {
+    height: 70px !important;
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+
+    @include themed() {
+        background-color: t($background-alt);
+        box-shadow: t($shadow-sm);
+    }
+}

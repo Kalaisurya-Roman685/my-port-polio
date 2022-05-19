@@ -1,0 +1,90 @@
+//Light colors
+$primary--light: #6ddfd8;
+$secondary--light: #04294b;
+
+$primary-lightened: rgba(109, 223, 216, 0.2);
+
+$background--light: #f8f7f7;
+$background-alt--light: #fcfcfc;
+
+$text-black--light: black;
+$text-white--light: white;
+$text-grey--light: #979797;
+
+$input-focused--light: #f0f0f0;
+
+$inverter--light: 0;
+
+$text--light: #000;
+$text-hover-light: #fbfbfb;
+$nav-text--light: #b4b4b4;
+
+$shadow-lg--light: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-md--light: 4px 4px 14px rgba(0, 0, 0, 0.19);
+$shadow-sm--light: 0px 4px 5px rgba(0, 0, 0, 0.07);
+
+$button-config-light: #f8f8f8;
+$frosted-light: #e4f6f4;
+
+//Dark colors
+
+$primary--dark: #6ddfd8;
+$secondary--dark: #04294b;
+
+$background--dark: black;
+$background-alt--dark: rgba(55, 54, 55, 1);
+
+$text-black--dark: white;
+$text-white--dark: black;
+$text-grey--dark: #979797;
+
+$input-focused--dark: #fdfdfd;
+
+$inverter--dark: 1;
+
+$text--dark: #fbfbfb;
+$text-hover-dark: #fbfbfb;
+$nav-text--dark: #b4b4b4;
+
+$shadow-lg--dark: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-md--dark: 4px 4px 14px rgba(0, 0, 0, 0.19);
+$shadow-sm--dark: 0px 4px 5px rgba(0, 0, 0, 0.07);
+
+$button-config-dark: hsl(0 0% 10%);
+$frosted-dark: #e4f6f4;
+
+// dashboard colors
+
+$back_bg_dash: #e7f8f7;
+$back_exterior: rgba(196, 196, 196, 0.22);
+$back_text_color: rgba(0, 0, 0, 0.5);
+
+$standard_interior: #57b2b9;
+
+// light modes
+
+$back_export_color-white: #7ffe9b;
+
+$text-color-blue-light: #0480b8;
+
+// dark modes
+
+$back_export_color-black: #3fc060;
+
+$text-color-blue-dark: #0480b8;
+
+$text-color-black: #000;
+
+$text-blur-color: #bf1494;
+
+$background-color-set: radial-gradient(47.59% 139.87% at 21.58% 28.75%, #b7adfc 0%, #d2f8ff 98.78%);
+
+$background-color-setioc1: radial-gradient(102.53% 115.07% at 10.21% 31.08%, #d2f8ff 21.94%, #aaaffb 63.81%);
+$background-card-color: radial-gradient(64.7% 74.81% at 33.77% 32.09%, #878df7 0%, #d2f8ff 98.1%);
+
+$services-text: #fdb510;
+
+$text-white: #ffffff;
+
+$tetx-kalai-button-white: white;
+$kalai-text-black:black;

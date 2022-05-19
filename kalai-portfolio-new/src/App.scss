@@ -1,0 +1,67 @@
+@use "scss" as *;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.port-polio {
+    width: 100vw;
+   
+    z-index: 200000000;
+    @include themed() {
+        background: t($background);
+        // background: t($background-liner-sets);
+        color: t($text);
+    }
+}
+
+.box-app {
+    position: fixed;
+    right: 10px;
+    top: 10%;
+    z-index: 1000000000000000;
+    background-color: orange !important;
+    border-radius: 100%;
+    cursor: pointer;
+    @include xsBreakPoint {
+        // border: 2px solid red;
+        z-index: 1000000000000000000000000;
+    }
+    .imag-box {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        @include xsBreakPoint {
+            width: 50px;
+            height: 50px;
+        }
+        .settings {
+            width: 70px;
+            position: absolute;
+            background-clip: content-box;
+            height: 70px;
+            animation: rotates 5s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include xsBreakPoint {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+@keyframes rotates {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(250deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

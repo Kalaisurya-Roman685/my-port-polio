@@ -1,0 +1,135 @@
+@use "../abstract/" as *;
+
+.p-datatable.p-datatable-scrollable {
+    .p-datatable-scrollable-header {
+        background: transparent !important;
+    }
+
+    .p-datatable-scrollable-body {
+        scroll-behavior: smooth;
+        // scrollbar-color: var(--theme_color_2) transparent;
+        scrollbar-width: thin;
+
+        @include themed() {
+            scrollbar-color: t($primary) transparent;
+        }
+
+        &::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent !important;
+            height: 7px;
+            width: 7px;
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 7px;
+            width: 7px;
+            border-radius: 30px;
+
+            @include themed() {
+                background: t($primary) !important;
+            }
+        }
+    }
+
+    table {
+        thead.p-datatable-thead {
+            width: 100% !important;
+
+            > tr {
+                > th {
+                    background: transparent !important;
+                    font-size: 3rem !important;
+                    display: flex;
+                    justify-content: flex-start !important;
+                    @include themed() {
+                        color: t($text-black) !important;
+                    }
+                }
+            }
+            .p-column-title {
+                background: transparent !important;
+                font-size: 1.1rem !important;
+                text-align: center !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
+                @include themed() {
+                    color: t($text-black) !important;
+                }
+            }
+        }
+
+        tbody,
+        .p-datatable-tbody {
+            margin-bottom: 10px !important;
+            width: 100%;
+            border-radius: none !important;
+            > tr {
+                border-radius: 16px !important;
+                min-height: 100px;
+                margin: 10px 0px !important;
+                @include themed() {
+                    background: t($background-alt) !important;
+                    box-shadow: t($shadow-sm) !important;
+                    color: t($text-black) !important;
+                }
+
+                > td {
+                    border: none !important;
+                    overflow-x: scroll;
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: flex-start !important;
+                    padding: 0 11px !important;
+                    word-break: break-all;
+
+                    .mx-auto {
+                        margin: 0 !important;
+                    }
+                }
+            }
+            td .d-flex {
+                // border:2px solid red;
+                white-space: normal !important;
+                text-align: center;
+            }
+            .flex-column {
+                align-items: baseline !important;
+            }
+            .flex-row {
+                align-items: baseline !important;
+                justify-content: flex-start !important;
+            }
+            .d-flex {
+                align-items: baseline !important;
+                padding: 0 !important;
+            }
+            .border {
+                align-items: baseline !important;
+                flex-direction: none !important;
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+.p-datatable-scrollable-header {
+    .p-datatable-scrollable-header-box {
+        .p-datatable-thead {
+            text-align: start !important;
+            display: flex;
+            justify-content: flex-start !important;
+        }
+        .p-column-title {
+            display: flex;
+            align-items: none !important;
+            justify-content: flex-start !important;
+            margin: 0 !important;
+        }
+    }
+}

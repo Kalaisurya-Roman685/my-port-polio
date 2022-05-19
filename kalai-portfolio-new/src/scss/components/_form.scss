@@ -1,0 +1,14 @@
+@use '../abstract' as *;
+
+input, textarea, select {
+  @include themed() {
+    background-color: t($background);
+    color: t($text-black);
+  }
+}
+
+label {
+  @include themed() {
+    color: t($text-black);
+  }
+}

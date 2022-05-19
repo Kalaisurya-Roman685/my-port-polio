@@ -1,0 +1,214 @@
+@use "../abstract" as *;
+
+.eco-body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    .side-nav {
+        // margin: 100px 0px !important;
+        width: 100px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        padding: 20% 0;
+        z-index: 100;
+
+        @include themed() {
+            background-color: t($secondary);
+            box-shadow: t($shadow-md);
+        }
+
+        a {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none !important;
+
+            .side-nav-icons {
+                height: 40px;
+                width: 40px;
+            }
+            .side-nav-text {
+                font-size: 0.7rem;
+                font-weight: bold;
+                margin-top: 4px;
+                color: gray;
+            }
+        }
+
+        .active::before {
+            content: "";
+            height: 25px;
+            width: 30px;
+            position: absolute;
+            top: 33%;
+            left: 0;
+            transform: translateY(-50%);
+            display: block;
+            background-image: url(../../assets/triangle.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    main {
+        width: calc(100% - 100px);
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: auto;
+
+        .main-body {
+            width: 100%;
+            height: calc(100vh - 80px);
+            padding: 2vh 2vw;
+            overflow: hidden;
+        }
+
+        .navbar {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 !important;
+            z-index: 200;
+
+            @include themed() {
+                background: t($background-alt) !important;
+                color: t($text-black) !important;
+                box-shadow: t($shadow-sm) !important;
+            }
+
+            .main-center-nav {
+                margin: 0 auto;
+                position: relative;
+
+                a {
+                    margin: 0 50px;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                    position: relative;
+
+                    @include themed() {
+                        color: t($text-black) !important;
+                    }
+                }
+
+                .active:before {
+                    content: "";
+                    height: 8px;
+                    width: 90%;
+                    position: absolute;
+                    top: 45px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 20px;
+
+                    @include themed() {
+                        background: t($primary) !important;
+                    }
+                }
+            }
+
+            .nav-corner-align {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                form {
+                    position: relative;
+
+                    input,
+                    .input:focus,
+                    input:active {
+                        outline: none !important;
+                        box-shadow: none !important;
+                        //border: none !important;
+
+                        @include themed() {
+                            background-color: t($input-focused);
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        right: 5px;
+                        transform: translateY(-50%);
+                    }
+                }
+                .nav-dropdown {
+                    position: absolute;
+                    top: 110%;
+                    right: 5%;
+                    min-width: 10rem;
+                    min-height: 5rem;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+
+                    @include themed() {
+                        background: t($background-alt);
+                        color: t($text-black);
+                        box-shadow: t($shadow-md);
+                    }
+
+                    .nav-dropdown-item {
+                        padding: 10px 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+
+                        @include themed() {
+                            border-bottom: 1px solid t($text-grey);
+                        }
+
+                        &:hover {
+                            @include themed() {
+                                background: t($background);
+                            }
+                        }
+
+                        &:first-child {
+                            border-radius: 10px 10px 0 0;
+                        }
+
+                        &:last-child {
+                            border-bottom: none;
+                            border-radius: 0 0 10px 10px;
+                        }
+                    }
+                }
+            }
+
+            .nav-profile-picture {
+                border-radius: 50px;
+                overflow: hidden;
+                width: 70px;
+                height: 70px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .input {
+            width: 50%;
+        }
+    }
+}
