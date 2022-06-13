@@ -1,0 +1,71 @@
+@use '../../../../scss/abstract/' as *;
+
+.contact-page
+{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    .inside-contact
+    {
+        width:100%;
+        height: 100%;
+        display: flex;
+        .left-contact
+        {
+            width:50%;
+            
+            .imag-section
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .conatct-image
+            {
+                width:100%;
+                height:100%;
+                object-fit: contain;
+                
+            }
+            .contacts
+            {
+                font-size:2.5rem;
+                font-weight: 600;
+                padding-left: 5%;
+                padding-top: 2%;
+            }
+
+        }
+        .right-contact
+        {
+            width:50%;
+            display: flex;
+            form
+            {
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .btn-primarys
+            {
+                width:20%;
+                // border:2px solid red;
+                background-color: orange;
+                padding:5px;
+                border-radius: 20px;
+                font-size:1.4rem;
+                font-weight:600;
+                color:white;
+            }
+            .form-label
+            {
+                color:orangered;
+                font-weight: 700;
+                font-size:1.2rem;
+            }
+        }
+
+    }
+}

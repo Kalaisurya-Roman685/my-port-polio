@@ -1,0 +1,1042 @@
+@use "../../../../scss//abstract/" as *;
+
+// .section1 {
+//     width: 100%;
+//     height: 100vh;
+//     overflow: hidden;
+//     position: relative;
+//     .inside-section1 {
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+
+//         .left-section1 {
+//             width: 50%;
+//             height: 100%;
+
+//             @include lgBreakPoint {
+//                 width: 100%;
+//             }
+//             @include xlBreakPoint {
+//                 width: 100%;
+//             }
+//             @include xxlBreakPoint {
+//                 width: 100%;
+//             }
+//             .content-section1 {
+//                 display: flex;
+//                 flex-direction: column;
+//                 margin-left: 10%;
+//                 z-index: 100000;
+//                 padding-top: 20%;
+//                 @include lgBreakPoint {
+//                     padding-top: 30%;
+//                 }
+//             }
+
+//             .image1 {
+//                 position: absolute;
+//                 top: 5%;
+//                 left: 28%;
+//                 @include lgBreakPoint {
+//                     left: 33%;
+//                     top: 20%;
+//                 }
+//                 @include xlBreakPoint {
+//                     left: 32%;
+//                     top: 12% !important;
+//                 }
+//                 @include xxlBreakPoint {
+//                     left: 26%;
+//                     top: 12% !important;
+//                 }
+//                 .section-image {
+//                     transform: translateY(0);
+//                     animation: bounces1 5s ease-in-out infinite;
+//                     background-color: orange !important;
+//                     border-radius: 50%;
+//                     border: 18px solid orangered;
+//                     @include lgBreakPoint {
+//                         width: 40%;
+//                     }
+//                     @include xlBreakPoint {
+//                         width: 50%;
+//                     }
+//                     @include xxlBreakPoint {
+//                         width: 60%;
+//                     }
+//                 }
+//             }
+//             .hy {
+//                 font-size: 4rem;
+//                 font-size: 700;
+//                 @include xlBreakPoint {
+//                     font-size: 4.2rem;
+//                 }
+//                 @include xxlBreakPoint {
+//                     font-size: 3.8rem;
+//                 }
+//             }
+//             .kalai {
+//                 color: $back_export_color-black;
+//                 font-size: 5rem;
+//                 @include lgBreakPoint {
+//                     font-size: 2.4rem;
+//                 }
+//                 @include xlBreakPoint {
+//                     font-size: 3.6rem;
+//                 }
+//                 @include xxlBreakPoint {
+//                     font-size: 3.6rem;
+//                 }
+//             }
+
+//             .hire {
+//                 width: 25%;
+//                 border: none;
+//                 outline: none;
+//                 padding: 15px;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 border-radius: 20px;
+//                 color: white;
+//                 background-color: $back_export_color-black;
+//                 font-size: 1.6rem;
+//                 font-weight: 700;
+//                 box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+//                 @include lgBreakPoint {
+//                     width: 40%;
+//                 }
+//                 @include xlBreakPoint {
+//                     width: 40%;
+//                 }
+//                 @include xxlBreakPoint {
+//                     width: 30%;
+//                 }
+//             }
+//         }
+//         .right-section1 {
+//             width: 50%;
+//             height: 100%;
+//             position: relative;
+//             @include lgBreakPoint {
+//                 width: 100%;
+//             }
+//             @include xlBreakPoint {
+//                 width: 100%;
+//             }
+//             @include xxlBreakPoint {
+//                 width: 100%;
+//             }
+//             .right-offset {
+//                 .right-oofsets {
+//                     width: 10%;
+//                     right: 0;
+//                     position: absolute;
+//                     bottom: 0;
+//                 }
+//             }
+
+//             .purush {
+//                 .purushed {
+//                     width: 100%;
+//                     position: absolute;
+//                     z-index: 0;
+//                     right: 0%;
+//                     top: 10%;
+//                     @include lgBreakPoint {
+//                         top: 30%;
+//                         left: 5%;
+//                     }
+//                     @include xlBreakPoint {
+//                         top: 20%;
+//                         left: 5%;
+//                     }
+//                     @include xxlBreakPoint {
+//                         top: 20%;
+//                         left: 5%;
+//                     }
+//                 }
+//             }
+//             .profiles {
+//                 width: 22%;
+//                 position: absolute;
+//                 z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+//                 top: 12%;
+//                 left: 10%;
+//                 transition: all 1s ease-in;
+//                 @include lgBreakPoint {
+//                     width: 27%;
+//                     top: 25%;
+//                 }
+//                 @include xlBreakPoint {
+//                     width: 25%;
+//                     top: 20%;
+//                 }
+//                 @include xxlBreakPoint {
+//                     width: 25%;
+//                     top: 18%;
+//                 }
+//             }
+//             .profiles:hover {
+//                 cursor: pointer;
+//                 transform: scale(1.2);
+//                 transition: all 2s ease;
+//             }
+//             .settings-kalais {
+//                 width: 22%;
+//                 position: absolute;
+//                 z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+//                 top: 17%;
+//                 right: 9%;
+//                 transition: all 1s ease-in;
+//                 @include lgBreakPoint {
+//                     width: 27%;
+//                     top: 28%;
+//                 }
+//                 @include xlBreakPoint {
+//                     width: 25%;
+//                 }
+//                 @include xxlBreakPoint {
+//                     width: 25%;
+//                     top: 22%;
+//                 }
+//             }
+//             .settings-kalais:hover {
+//                 cursor: pointer;
+//                 transform: scale(1.2);
+//                 transition: all 2s ease;
+//             }
+//             .abouts-kalai {
+//                 width: 22%;
+//                 position: absolute;
+//                 z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+//                 top: 40%;
+//                 right: 2%;
+//                 transition: all 1s ease-in;
+//                 @include lgBreakPoint {
+//                     width: 27%;
+//                     top: 45%;
+//                 }
+//                 @include xlBreakPoint {
+//                     width: 25%;
+//                 }
+//                 @include xxlBreakPoint {
+//                     width: 25%;
+//                     top: 45%;
+//                 }
+//             }
+//             .abouts-kalai:hover {
+//                 cursor: pointer;
+//                 transform: scale(1.2);
+//                 transition: all 2s ease;
+//             }
+//             .chats-kalai {
+//                 width: 22%;
+//                 position: absolute;
+//                 z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+//                 top: 65%;
+//                 right: 12%;
+//                 transition: all 1s ease-in;
+//                 @include lgBreakPoint {
+//                     width: 27%;
+//                     top: 68%;
+//                     right: 6%;
+//                 }
+//                 @include xlBreakPoint {
+//                     width: 25%;
+//                 }
+//                 @include xxlBreakPoint {
+//                     width: 25%;
+//                     top: 69%;
+//                 }
+//             }
+//             .chats-kalai:hover {
+//                 cursor: pointer;
+//                 transform: scale(1.2);
+//                 transition: all 2s ease;
+//             }
+//             .developers-kalai {
+//                 width: 23%;
+//                 position: absolute;
+//                 z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+//                 top: 38%;
+//                 left: 3%;
+//                 transition: all 1s ease-in;
+//                 @include lgBreakPoint {
+//                     width: 27%;
+//                     top: 45%;
+//                 }
+//                 @include xlBreakPoint {
+//                     width: 25%;
+//                     top: 45%;
+//                 }
+//                 @include xxlBreakPoint {
+//                     width: 25%;
+//                     top: 40%;
+//                 }
+//             }
+//             .developers-kalai:hover {
+//                 cursor: pointer;
+//                 transform: scale(1.2);
+//                 transition: all 2s ease;
+//             }
+//             .services-kalai {
+//                 width: 23%;
+//                 position: absolute;
+//                 z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+//                 top: 70%;
+//                 left: 9%;
+//                 transition: all 1s ease-in;
+//                 @include lgBreakPoint {
+//                     width: 27%;
+//                 }
+//                 @include xlBreakPoint {
+//                     width: 25%;
+//                 }
+//             }
+//             .services-kalai:hover {
+//                 cursor: pointer;
+//                 transform: scale(1.2);
+//                 transition: all 2s ease;
+//             }
+//             .actives-kalai {
+//                 width: 23%;
+//                 position: absolute;
+//                 z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+//                 top: 20%;
+//                 left: 9%;
+//                 transition: all 1s ease-in;
+//                 @include lgBreakPoint {
+//                     width: 27%;
+//                 }
+//                 @include xlBreakPoint {
+//                     width: 25%;
+//                 }
+//             }
+//             .actives-kalai:hover {
+//                 cursor: pointer;
+//                 transform: scale(1.2);
+//                 transition: all 2s ease;
+//             }
+//             .image-rounds {
+//                 .round1 {
+//                     width: 35%;
+//                     position: absolute;
+//                     left: 60%;
+//                     top: 14%;
+
+//                     @include lgBreakPoint {
+//                         width: 39%;
+//                         top: 28%;
+//                     }
+//                     @include xlBreakPoint {
+//                         width: 35%;
+//                         top: 28%;
+//                     }
+//                 }
+//             }
+
+//             .smile1 {
+//                 @include lgBreakPoint {
+//                     left: 0;
+//                 }
+//                 .smiles {
+//                     position: absolute;
+//                     top: 5%;
+//                     transition: 2s ease;
+//                     width: 12%;
+//                     animation: smile1 5s ease-in-out infinite;
+//                     @include lgBreakPoint {
+//                         width: 25% !important;
+//                     }
+//                     @include xlBreakPoint {
+//                         width: 18% !important;
+//                     }
+//                     @include xxlBreakPoint {
+//                         width: 13%;
+//                     }
+//                 }
+//             }
+//             .smile2 {
+//                 .smiles1 {
+//                     width: 12%;
+//                     transition: 2s ease;
+//                     animation: smile2 5s ease-in-out infinite;
+//                     position: absolute;
+//                     top: 50%;
+//                     @include lgBreakPoint {
+//                         width: 20% !important;
+//                     }
+
+//                     @include xlBreakPoint {
+//                         width: 18% !important;
+//                     }
+//                     @include xxlBreakPoint {
+//                         width: 13%;
+//                     }
+//                 }
+//             }
+//             .smile3 {
+//                 .smiles2 {
+//                     width: 12%;
+//                     transition: 2s ease;
+//                     animation: smile3 5s ease-in-out infinite;
+//                     position: absolute;
+//                     top: 15%;
+//                     right: 0;
+//                     @include lgBreakPoint {
+//                         width: 20% !important;
+//                     }
+//                     @include xlBreakPoint {
+//                         width: 18% !important;
+//                     }
+//                     @include xxlBreakPoint {
+//                         width: 13%;
+//                     }
+//                 }
+//             }
+//             .smile4 {
+//                 .smiles3 {
+//                     width: 12%;
+//                     animation: smile4 5s ease-in-out infinite;
+//                     position: absolute;
+//                     z-index: 10000;
+//                     bottom: 0;
+//                     left: 20%;
+//                     @include lgBreakPoint {
+//                         width: 20% !important;
+//                         left: 18%;
+//                     }
+//                     @include xlBreakPoint {
+//                         width: 18% !important;
+//                         left: 15%;
+//                     }
+//                     @include xxlBreakPoint {
+//                         width: 13%;
+//                         left: 15%;
+//                     }
+//                 }
+//             }
+//             .smile5 {
+//                 .smiles4 {
+//                     width: 12%;
+//                     animation: smile5 5s ease-in-out infinite;
+//                     position: absolute;
+//                     right: 0;
+//                     bottom: 0;
+//                     z-index: 10000;
+//                     @include lgBreakPoint {
+//                         width: 20% !important;
+//                     }
+//                     @include xlBreakPoint {
+//                         width: 18% !important;
+//                     }
+//                     @include xxlBreakPoint {
+//                         width: 13%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+:root {
+    --color-bg-day: #d6e0e7;
+    --color-bg-night: #3b3a3c;
+    --color-slider-day: #fff;
+    --color-slider-night: #050218;
+    --color-label-day-day: #3f3e40;
+    --color-label-day-night: #79787a;
+    --color-label-night-day: #a1d7e8;
+    --color-label-night-night: #88d7f1;
+    --color-slider-dot-day-shadow: #6ca6c1;
+    --color-slider-dot-night-shadow: #111;
+}
+
+.main-home-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .inside-home-page {
+        width: 100%;
+        height: 100%;
+        .top-navbars {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 30px;
+            .list-section {
+                display: flex;
+                gap: 100px;
+            }
+            .dark-section {
+                .App {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    transition: 0.3s;
+                }
+
+                .App--Day {
+                    // background: var(--color-bg-day);
+                }
+
+                .App--Night {
+                    background: var(--color-bg-night);
+                }
+
+                .Switch {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .Switch:hover {
+                    cursor: pointer;
+                }
+
+                .Switch__CheckBox {
+                    opacity: 0;
+                    width: 0px;
+                    height: 0px;
+                }
+
+                .Switch__Slider {
+                    width: 3.5rem;
+                    height: 1.9rem;
+                    border-radius: 1rem;
+                    margin: 0 0.5rem;
+                    padding: 0.2rem;
+                    display: flex;
+                    align-items: center;
+                    background: var(--color-slider-day);
+                    transition: 0.3s;
+                }
+
+                input:checked ~ .Switch__Slider {
+                    background: var(--color-slider-night);
+                    transition: 0.3s;
+                }
+
+                .Switch__SliderDot {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 50%;
+                }
+
+                .Switch__SliderDot {
+                    background-color: orange; /* fallback color */
+                    background: url(https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+                    background-size: 230%;
+                    background-position: center;
+                    transition: 0.3s;
+                    will-change: transform;
+                    box-shadow: 0 0.4rem 1rem 0 var(--color-slider-dot-day-shadow);
+                }
+
+                input:checked ~ .Switch__Slider .Switch__SliderDot {
+                    background-color: red; /* fallback color */
+                    background: url(https://media.istockphoto.com/photos/full-moon-close-up-picture-id490137064?b=1&k=20&m=490137064&s=170667a&w=0&h=I6OMlQb6RNExRjN75j-m755SGLnpjWpAKXxc6oRAN14=);
+                    background-size: 250%;
+                    background-position: center;
+                    transform: translateX(115%) rotate(0.5turn);
+                    transition: 0.3s;
+                    box-shadow: 0 -0.4rem 1rem 0 var(--color-slider-dot-night-shadow);
+                }
+
+                .Switch__Label {
+                    font-size: 0.8rem;
+                    transform: scaleY(0.7);
+                }
+
+                .Switch__Label--Day {
+                    color: var(--color-label-day-day);
+                }
+
+                .Switch__Label--Night {
+                    color: var(--color-label-night-day);
+                }
+
+                input:checked ~ .Switch__Label--Day {
+                    color: var(--color-label-day-night);
+                }
+
+                input:checked ~ .Switch__Label--Night {
+                    color: var(--color-label-night-night);
+                    text-shadow: 0 0 1rem var(--color-label-night-night);
+                }
+
+                .wiggle {
+                    animation: wiggle 0.5s linear;
+                }
+
+                @keyframes wiggle {
+                    0% {
+                        transform: none;
+                    }
+                    25% {
+                        transform: translateX(0.05rem);
+                    }
+                    50% {
+                        transform: translateX(-0.05rem);
+                    }
+                    75% {
+                        transform: translateX(0.025rem);
+                    }
+                    100% {
+                        transform: none;
+                    }
+                }
+            }
+        }
+        .another-section-split {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            .left-section1-home {
+                width: 50%;
+                .image1 {
+                    position: absolute;
+                    top: 12%;
+                    left: 33%;
+                    .section-image {
+                        transform: translateY(0);
+                        animation: bounces1 5s ease-in-out infinite;
+                        background-color: orange !important;
+                        border-radius: 50%;
+                        border: 12px solid orangered;
+                        width: 45%;
+                    }
+                }
+                .text-button-section {
+                    padding-left: 10%;
+                    padding-top: 5%;
+                    .kalais {
+                        font-size: 4rem;
+                        padding-left: 15%;
+                        font-weight: 700;
+                        color: $back_export_color-black;
+                    }
+                    .hy {
+                        font-size: 4rem;
+                        font-size: 700;
+                        color: orangered;
+                        @include xlBreakPoint {
+                            font-size: 4.2rem;
+                        }
+                        @include xxlBreakPoint {
+                            font-size: 3.8rem;
+                        }
+                    }
+                    .socialicons {
+                        display: flex;
+                        gap: 40px;
+                        font-size: 2rem;
+                        cursor: pointer;
+                        color: orangered;
+                    }
+                    .kalai {
+                        color: $back_export_color-black;
+                        font-size: 5rem;
+                        @include lgBreakPoint {
+                            font-size: 2.4rem;
+                        }
+                        @include xlBreakPoint {
+                            font-size: 3.6rem;
+                        }
+                        @include xxlBreakPoint {
+                            font-size: 3.6rem;
+                        }
+                    }
+                    .typesection {
+                        font-size: 3rem;
+                        color: orange;
+                        font-weight: 600;
+                    }
+                    .build {
+                        font-size: 1.8rem;
+                    }
+                    .hire {
+                        width: 25%;
+                        border: none;
+                        outline: none;
+                        padding: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 20px;
+                        color: white;
+                        background-color: $back_export_color-black;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                        @include lgBreakPoint {
+                            width: 40%;
+                        }
+                        @include xlBreakPoint {
+                            width: 40%;
+                        }
+                        @include xxlBreakPoint {
+                            width: 30%;
+                        }
+                    }
+                    .stars1 {
+                        position: absolute;
+                        color: blue;
+                        font-size: 1.3rem;
+                        top: 10%;
+                        left: 20%;
+                        animation: stars 4s ease-in-out infinite;
+                    }
+                    .stars2 {
+                        position: absolute;
+                        color: lightcoral;
+                        font-size: 1.3rem;
+                        right: 65%;
+                        bottom: 30%;
+                        animation: stars 4s ease-in-out infinite;
+                    }
+                    .stars3 {
+                        position: absolute;
+                        color: cornflowerblue;
+                        font-size: 1.3rem;
+                        left: 4%;
+                        bottom: 5%;
+                        animation: stars 4s ease-in-out infinite;
+                    }
+                }
+            }
+            .right-section1-home {
+                width: 50%;
+                position: relative;
+                .purush {
+                    .purushed {
+                        width: 100%;
+                        position: absolute;
+                        z-index: 0;
+                        right: 0%;
+                        top: 2%;
+                        @include lgBreakPoint {
+                            top: 30%;
+                            left: 5%;
+                        }
+                        @include xlBreakPoint {
+                            top: 20%;
+                            left: 5%;
+                        }
+                        @include xxlBreakPoint {
+                            top: 20%;
+                            left: 5%;
+                        }
+                    }
+                }
+                .stars1 {
+                    position: absolute;
+                    color: orangered;
+                    font-size: 1.3rem;
+                    top: 2%;
+                    left: 30%;
+                    animation: stars 4s ease-in-out infinite;
+                }
+                .stars2 {
+                    position: absolute;
+                    color: blue;
+                    font-size: 1.3rem;
+                    right: 5%;
+                    bottom: 10%;
+                    animation: stars 4s ease-in-out infinite;
+                }
+                .stars3 {
+                    position: absolute;
+                    color: cornflowerblue;
+                    font-size: 1.3rem;
+                    left: 0;
+                    bottom: 10%;
+                    animation: stars 4s ease-in-out infinite;
+                }
+
+                .profiles {
+                    width: 22%;
+                    position: absolute;
+                    z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    top: 12%;
+                    left: 10%;
+                    transition: all 1s ease-in;
+                    @include lgBreakPoint {
+                        width: 27%;
+                        top: 25%;
+                    }
+                    @include xlBreakPoint {
+                        width: 25%;
+                        top: 20%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 25%;
+                        top: 18%;
+                    }
+                }
+                .profiles:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                }
+                .settings-kalais {
+                    width: 22%;
+                    position: absolute;
+                    z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    top: 17%;
+                    right: 9%;
+                    transition: all 1s ease-in;
+                    @include lgBreakPoint {
+                        width: 27%;
+                        top: 28%;
+                    }
+                    @include xlBreakPoint {
+                        width: 25%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 25%;
+                        top: 22%;
+                    }
+                }
+                .settings-kalais:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                }
+                .abouts-kalai {
+                    width: 22%;
+                    position: absolute;
+                    z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    top: 40%;
+                    right: 2%;
+                    transition: all 1s ease-in;
+                    @include lgBreakPoint {
+                        width: 27%;
+                        top: 45%;
+                    }
+                    @include xlBreakPoint {
+                        width: 25%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 25%;
+                        top: 45%;
+                    }
+                }
+                .abouts-kalai:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                }
+                .chats-kalai {
+                    width: 22%;
+                    position: absolute;
+                    z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    top: 65%;
+                    right: 12%;
+                    transition: all 1s ease-in;
+                    @include lgBreakPoint {
+                        width: 27%;
+                        top: 68%;
+                        right: 6%;
+                    }
+                    @include xlBreakPoint {
+                        width: 25%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 25%;
+                        top: 69%;
+                    }
+                }
+                .chats-kalai:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                }
+                .developers-kalai {
+                    width: 23%;
+                    position: absolute;
+                    z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    top: 38%;
+                    left: 3%;
+                    transition: all 1s ease-in;
+                    @include lgBreakPoint {
+                        width: 27%;
+                        top: 45%;
+                    }
+                    @include xlBreakPoint {
+                        width: 25%;
+                        top: 45%;
+                    }
+                    @include xxlBreakPoint {
+                        width: 25%;
+                        top: 40%;
+                    }
+                }
+                .developers-kalai:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                }
+                .services-kalai {
+                    width: 23%;
+                    position: absolute;
+                    z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    top: 70%;
+                    left: 9%;
+                    transition: all 1s ease-in;
+                    @include lgBreakPoint {
+                        width: 27%;
+                    }
+                    @include xlBreakPoint {
+                        width: 25%;
+                    }
+                }
+                .services-kalai:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                }
+                .actives-kalai {
+                    width: 23%;
+                    position: absolute;
+                    z-index: 78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    top: 20%;
+                    left: 9%;
+                    transition: all 1s ease-in;
+                    @include lgBreakPoint {
+                        width: 27%;
+                    }
+                    @include xlBreakPoint {
+                        width: 25%;
+                    }
+                }
+                .actives-kalai:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                }
+                .image-rounds {
+                    .round1 {
+                        width: 35%;
+                        position: absolute;
+                        left: 60%;
+                        top: 14%;
+
+                        @include lgBreakPoint {
+                            width: 39%;
+                            top: 28%;
+                        }
+                        @include xlBreakPoint {
+                            width: 35%;
+                            top: 28%;
+                        }
+                    }
+                }
+
+                .smile1 {
+                    @include lgBreakPoint {
+                        left: 0;
+                    }
+                    .smiles {
+                        position: absolute;
+                        top: 5%;
+                        transition: 2s ease;
+                        width: 12%;
+                        animation: smile1 5s ease-in-out infinite;
+                        @include lgBreakPoint {
+                            width: 25% !important;
+                        }
+                        @include xlBreakPoint {
+                            width: 18% !important;
+                        }
+                        @include xxlBreakPoint {
+                            width: 13%;
+                        }
+                    }
+                }
+                .smile2 {
+                    .smiles1 {
+                        width: 12%;
+                        transition: 2s ease;
+                        animation: smile2 5s ease-in-out infinite;
+                        position: absolute;
+                        top: 50%;
+                        @include lgBreakPoint {
+                            width: 20% !important;
+                        }
+
+                        @include xlBreakPoint {
+                            width: 18% !important;
+                        }
+                        @include xxlBreakPoint {
+                            width: 13%;
+                        }
+                    }
+                }
+                .smile3 {
+                    .smiles2 {
+                        width: 12%;
+                        transition: 2s ease;
+                        animation: smile3 5s ease-in-out infinite;
+                        position: absolute;
+                        top: 15%;
+                        right: 0;
+                        @include lgBreakPoint {
+                            width: 20% !important;
+                        }
+                        @include xlBreakPoint {
+                            width: 18% !important;
+                        }
+                        @include xxlBreakPoint {
+                            width: 13%;
+                        }
+                    }
+                }
+                .smile4 {
+                    .smiles3 {
+                        width: 12%;
+                        animation: smile4 5s ease-in-out infinite;
+                        position: absolute;
+                        z-index: 10000;
+                        bottom: 0;
+                        left: 20%;
+                        @include lgBreakPoint {
+                            width: 20% !important;
+                            left: 18%;
+                        }
+                        @include xlBreakPoint {
+                            width: 18% !important;
+                            left: 15%;
+                        }
+                        @include xxlBreakPoint {
+                            width: 13%;
+                            left: 15%;
+                        }
+                    }
+                }
+                .smile5 {
+                    .smiles4 {
+                        width: 12%;
+                        animation: smile5 5s ease-in-out infinite;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 10000;
+                        @include lgBreakPoint {
+                            width: 20% !important;
+                        }
+                        @include xlBreakPoint {
+                            width: 18% !important;
+                        }
+                        @include xxlBreakPoint {
+                            width: 13%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

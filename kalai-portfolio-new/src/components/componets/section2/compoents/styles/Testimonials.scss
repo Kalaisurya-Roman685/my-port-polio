@@ -1,0 +1,20 @@
+@use "../../../../../scss/abstract/" as *;
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .image-persons {
+        width: 80%;
+        height: 60vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,476 @@
+@use "../../../../../../scss/abstract/" as *;
+
+.section1mobile {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+    // background-color: red;
+    @include xsBreakPoint {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    @include smBreakPoint {
+        height: auto !important;
+    }
+    @include mdBreakPoint {
+        height: auto !important;
+    }
+
+    .inside-mobile {
+        display: flex;
+        flex-direction: column;
+        .left-mobile {
+            flex: 1;
+            text-align: center;
+            height: 100%;
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            .offs {
+                width: 20%;
+                position: absolute;
+                left: 0;
+                @include mdBreakPoint {
+                    width: 18%;
+                }
+            }
+            .section-image {
+                width: 60%;
+                transform: translateY(0);
+                animation: bounce 3s ease-in-out infinite;
+                background-color: orange !important;
+                border-radius: 50%;
+                border: 12px solid orangered;
+                @include smBreakPoint {
+                    width: 50%;
+                }
+                @include mdBreakPoint {
+                    width: 50%;
+                }
+            }
+            .hy {
+                font-size: 3rem !important;
+                font-size: 700;
+                @include mdBreakPoint {
+                    font-size: 4rem !important;
+                }
+            }
+            .kalai {
+                color: $back_export_color-white;
+                font-size: 3rem;
+                @include mdBreakPoint {
+                    font-size: 4.2rem !important;
+                }
+            }
+            .loream {
+                font-size: 1.1rem;
+                @include xsBreakPoint {
+                    width: 55% !important;
+                    line-height: 1.8;
+                    text-align: center;
+                }
+                @include smBreakPoint {
+                    width: 60% !important;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                @include mdBreakPoint {
+                    font-size: 1.5rem !important;
+                    width: 40px !important;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 50%;
+                }
+            }
+            .hire {
+                width: 55%;
+                border: none;
+                outline: none;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                color: white;
+                background-color: $back_export_color-black;
+                font-size: 1.6rem;
+                font-weight: 700;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                margin: 0 auto;
+                @include xsBreakPoint {
+                    padding: 10px !important;
+                    width: 50%;
+                }
+                @include smBreakPoint {
+                    width: 40%;
+                }
+                @include mdBreakPoint {
+                    margin: 0 auto;
+                    width: 30%;
+                }
+            }
+        }
+        .right-mobile {
+            flex: 1;
+            height: 100%;
+            // background-color: red;
+            padding: 10px;
+            position: relative;
+            .circles {
+                position: relative;
+                @include xsBreakPoint {
+                    width: 400px;
+                    margin: 0 auto;
+                }
+                @include smBreakPoint {
+                    widht: 100%;
+                    margin: 0 auto;
+                    left: 5%;
+                }
+                @include mdBreakPoint {
+                    width: 80%;
+                    margin: 0 auto;
+                    left: 6%;
+                }
+                .pru {
+                    position: absolute;
+                    top: 2.6rem;
+                    left: 3rem;
+                    @include xsBreakPoint {
+                        display: flex;
+                        width: 50%;
+                        justify-content: center;
+                        align-items: center;
+                        left: 25%;
+                    }
+                    @include smBreakPoint {
+                        width: 50%;
+                        margin: 0 auto;
+                        left: 9rem;
+                    }
+                    @include mdBreakPoint {
+                        width: 45%;
+                        top: 20%;
+                        left: 18%;
+                    }
+                }
+                .kalai-purush {
+                    width: 100%;
+                }
+                .profiles-kalais {
+                    // width: 10%;
+                    transition: all 1s ease-in;
+                    // border: 2px solid red;
+                    // overflow: hidden;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 0;
+                        z-index: 600000000000000000000000000000;
+                    }
+                    @include mdBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 0;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .settings-kalais {
+                    // width: 10%;
+                    transition: all 1s ease-in;
+                    // border: 2px solid red;
+                    // overflow: hidden;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 15%;
+                        right: 7%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                    @include mdBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 15%;
+                        right: 7%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .Aboutus-kalais {
+                    transition: all 1s ease-in;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 60%;
+                        right: 7%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                    @include mdBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 60%;
+                        right: 7%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .chatss-kalais {
+                    transition: all 1s ease-in;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 78%;
+                        left: 10%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                    @include mdBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 78%;
+                        left: 10%;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .developers-kalais {
+                    transition: all 1s ease-in;
+                    @include xsBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 42%;
+                        left: 0;
+                        z-index: 600000000000000000000000000000;
+                    }
+                    @include mdBreakPoint {
+                        width: 55%;
+                        position: absolute;
+                        top: 42%;
+                        left: 0;
+                        z-index: 600000000000000000000000000000;
+                    }
+                }
+                .profiles-kalais:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: all 2s ease;
+                    @include xsBreakPoint {
+                        cursor: pointer;
+                        transform: scale(1.2);
+                        transition: all 2s ease;
+                    }
+                }
+                .smile {
+                    position: absolute;
+                    top: 0;
+                    left: 5%;
+                    animation: smile 5s ease-in-out infinite;
+                    @include xsBreakPoint {
+                        width: 16%;
+                    }
+                    @include smBreakPoint {
+                        width: 18%;
+                    }
+                    @include mdBreakPoint {
+                        width: 16%;
+                        left: 30%;
+                    }
+                }
+                .smile1 {
+                    position: absolute;
+                    top: 0;
+                    animation: smile1 5s ease-in-out infinite;
+                    @include xsBreakPoint {
+                        width: 16%;
+                        top: 40%;
+                    }
+                    @include smBreakPoint {
+                        width: 18%;
+                        top: 70%;
+                    }
+                    @include mdBreakPoint {
+                        width: 16%;
+                        top: 80%;
+                        left: -8%;
+                    }
+                }
+                .smile2 {
+                    position: absolute;
+                    top: 0;
+                    animation: smile2 5s ease-in-out infinite;
+                    @include xsBreakPoint {
+                        width: 16%;
+                        top: 95%;
+                    }
+                    @include smBreakPoint {
+                        width: 18%;
+                        // top: 50%;
+                    }
+                    @include mdBreakPoint {
+                        width: 14%;
+                        top: 35%;
+                        left: -17%;
+                    }
+                }
+                .smile3 {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    animation: smile3 5s ease-in-out infinite;
+                    @include xsBreakPoint {
+                        width: 16%;
+                        top: 3%;
+                        right: 15%;
+                    }
+                    @include smBreakPoint {
+                        width: 18%;
+                        top: 5%;
+                    }
+                    @include mdBreakPoint {
+                        width: 16%;
+                        top: 66%;
+                    }
+                }
+                .smile4 {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    animation: smile4 5s ease-in-out infinite;
+                    @include xsBreakPoint {
+                        width: 16%;
+                        top: 90%;
+                        right: 10%;
+                    }
+                    @include smBreakPoint {
+                        width: 18%;
+                        top: 70%;
+                    }
+                    @include mdBreakPoint {
+                        width: 16%;
+                        top: 0%;
+                    }
+                }
+            }
+        }
+        .last-oofets {
+            position: absolute;
+            right: 0;
+            width: 20%;
+            bottom: 0;
+            @include xsBreakPoint {
+                widht: 10%;
+            }
+        }
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: scale(1.2);
+        transform: translateY(0);
+    }
+    50% {
+        transform: scale(1);
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: scale(1.5);
+        transform: translateY(0);
+    }
+}
+
+@keyframes smile {
+    0%,
+    100% {
+        transform: scale(1.2);
+        transform: translateX(0);
+    }
+    50% {
+        transform: scale(1);
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: scale(1.5);
+        transform: translateX(0);
+    }
+}
+
+@keyframes smile1 {
+    0%,
+    100% {
+        transform: scale(1.2);
+        transform: translateX(0);
+    }
+    50% {
+        transform: scale(1);
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: scale(1.5);
+        transform: translateX(0);
+    }
+}
+
+@keyframes smile2 {
+    0%,
+    100% {
+        transform: scale(1.2);
+        transform: translateX(0);
+    }
+    50% {
+        transform: scale(1);
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: scale(1.5);
+        transform: translateX(0);
+    }
+}
+
+@keyframes smile3 {
+    0%,
+    100% {
+        transform: scale(1.2);
+        transform: translateX(0);
+    }
+    50% {
+        transform: scale(1);
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: scale(1.5);
+        transform: translateX(0);
+    }
+}
+
+@keyframes smile4 {
+    0%,
+    100% {
+        transform: scale(1.2);
+        transform: translateX(0);
+    }
+    50% {
+        transform: scale(1);
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: scale(1.5);
+        transform: translateX(0);
+    }
+}
+
+@keyframes smile5 {
+    0%,
+    100% {
+        transform: scale(1.2);
+        transform: translateX(0);
+    }
+    50% {
+        transform: scale(1);
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: scale(1.5);
+        transform: translateX(0);
+    }
+}

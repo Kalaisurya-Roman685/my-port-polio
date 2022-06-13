@@ -30,6 +30,8 @@ $background-color-section1: "backgroundcolor-section";
 $card-background: "card-background-color";
 $service-text-colors: "services-text-color";
 $button-white-text: "kalai-text-button-black";
+$cards-light-backcolor: "card-dark-and-light";
+$card-dark-and-light-second: "card-dark-and-light-second";
 $themes: (
     light: (
         primary: $primary--light,
@@ -57,6 +59,8 @@ $themes: (
         card-background-color: $background-card-color,
         services-text-color: $services-text,
         kalai-text-button-black: $kalai-text-black,
+        card-dark-and-light: $background-liner-colors-cards1-light,
+        card-dark-and-light-second: $background-liner-color-cards2-light,
     ),
     dark: (
         primary: $primary--dark,
@@ -86,5 +90,7 @@ $themes: (
         card-background-color: $primary--light,
         services-text-color: $services-text,
         kalai-text-button-black: $tetx-kalai-button-white,
+        card-dark-and-light: $background-liner-colors-cards1-dark,
+        card-dark-and-light-second: $background-liner-color-cards2-dark,
     ),
 );

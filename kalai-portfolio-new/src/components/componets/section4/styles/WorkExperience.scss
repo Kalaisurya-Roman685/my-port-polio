@@ -1,0 +1,70 @@
+@use "../../../../scss/abstract/" as *;
+
+.work-experinec-main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .inside-works {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .left-workexperience {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .work-image {
+                width: 80%;
+                height: 80%;
+                // object-fit: cover;
+            }
+        }
+        .right-workexperience {
+            width: 50%;
+            .split-num {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                // border: 2px solid blue;
+                // height: 10%;
+                .work {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: orangered;
+                }
+                .numbers
+                {
+                    padding-right: 5%;
+                }
+                .num {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: orangered;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    color: white;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                
+                }
+            }
+
+            .inside-etxtbox {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+
+                .icons {
+                    font-size: 1.3rem;
+                    color: green;
+                }
+                .experiencetexts {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+@use "../../../../scss/abstract/" as *;
+.about-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .about-inside-sections {
+        width: 100%;
+        height: 100%;
+        .about {
+            width: 100%;
+            height: 5%;
+            padding-left: 5%;
+        }
+        .inside-about-section {
+            width: 100%;
+            height: 95%;
+            display: flex;
+            .left-about-section {
+                width: 50%;
+                height: 100%;
+            }
+            .right-about-section {
+                width: 50%;
+                height: 100%;
+                position: relative;
+                .heres {
+                    padding-left: 10px;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: orangered;
+                }
+                .raects {
+                    font-size: 1.3rem;
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    word-break: all;
+                    width: 95%;
+                    font-weight: 600;
+                    line-height: 2;
+                }
+                .split-here {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    gap: 10px;
+                    line-height: 2;
+
+                    .empty-circle {
+                        color: green;
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                        object-fit: cover;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .text-here {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        // color: $text-greens;
+                        // color: $text-orange-color;
+                    }
+                }
+                .stars1 {
+                    position: absolute;
+                    top: 10%;
+                    right: 5%;
+                    font-size: 1.63rem;
+                    color: blue;
+                    animation: stars 4s ease-in-out infinite;
+                }
+                .stars2 {
+                    position: absolute;
+                    top: 40%;
+                    right: 25%;
+                    font-size: 1.63rem;
+                    color: orangered;
+                    animation: stars 4s ease-in-out infinite;
+                }
+                .stars3 {
+                    position: absolute;
+                    // top:10%;
+                    right: 5%;
+                    bottom: 20%;
+                    font-size: 1.63rem;
+                    color: cyan;
+                    animation: stars 4s ease-in-out infinite;
+                }
+                .buttons {
+                    display: flex;
+                    gap: 40px;
+
+                    .hireme {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        background-color: green;
+                        padding: 10px 40px;
+                        border-radius: 20px;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        color: white;
+                    }
+                    .getresume {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        background-color: orange;
+                        padding: 10px 30px;
+                        border-radius: 20px;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                    .getresume:hover {
+                        // background-color: $light-rose-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes stars {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

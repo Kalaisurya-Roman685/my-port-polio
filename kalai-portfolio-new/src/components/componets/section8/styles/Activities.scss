@@ -1,0 +1,40 @@
+@use "../../../../scss/abstract/" as *;
+
+.main-activities {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .inside-activities {
+        width: 100%;
+        height: 100%;
+        .top-navbars {
+            height: 10%;
+            padding-top: 1%;
+            .mys {
+                font-size: 2rem;
+                padding-left: 5%;
+                font-weight: 700;
+                color: orangered;
+            }
+        }
+        .box-split {
+            display: flex;
+            height: 90%;
+            .left-activities {
+                width: 50%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .right-activities {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 5.5rem;
+                color: orangered;
+            }
+        }
+    }
+}

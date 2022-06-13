@@ -1,0 +1,62 @@
+@use "../../../../scss/abstract/" as *;
+
+.scrolls-buttons {
+    position: relative;
+    cursor: pointer;
+}
+.toprotest {
+    width: 30%;
+    bottom: 0;
+    right: -60px;
+    position: fixed;
+    z-index: 70000000000000000;
+    @include xsBreakPoint {
+        width: 40%;
+        right: -1%;
+    }
+    @include smBreakPoint {
+        width: 30%;
+        right: -1%;
+    }
+    @include mdBreakPoint {
+        width: 30%;
+        right: -1%;
+    }
+    @include lgBreakPoint {
+        width: 30%;
+        right: -1%;
+    }
+}
+.fiexd-orgins {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 30px;
+    color: black !important;
+    left: 50%;
+    // flex-direction: column;
+    gap: 30px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: black;
+}
+.home {
+    animation: bounces 5s ease-in-out infinite;
+}
+
+@keyframes bounces {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}

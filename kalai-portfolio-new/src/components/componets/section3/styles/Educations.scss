@@ -1,0 +1,126 @@
+@use "../../../../scss/abstract/" as *;
+
+.Education-main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .insoide-education {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .left-education {
+            width: 50%;
+            .stars1 {
+                position: absolute;
+                color: blue;
+                font-size: 1.3rem;
+                top: 10%;
+                left: 20%;
+                animation: stars 4s ease-in-out infinite;
+            }
+            .stars2 {
+                position: absolute;
+                color: lightcoral;
+                font-size: 1.3rem;
+                right: 65%;
+                bottom: 30%;
+                animation: stars 4s ease-in-out infinite;
+            }
+            .stars3 {
+                position: absolute;
+                color: cornflowerblue;
+                font-size: 1.3rem;
+                left: 4%;
+                bottom: 5%;
+                animation: stars 4s ease-in-out infinite;
+            }
+            .inside-educations {
+                width: 100%;
+                padding-left: 5%;
+            }
+            .edu {
+                font-weight: 600;
+            }
+            .first-edu {
+                width: 100%;
+                height: 20%;
+                display: flex;
+
+                .left-edu {
+                    width: 75%;
+                    font-size: 2rem;
+                    .masters {
+                        color: orangered;
+                        font-weight: 700;
+                    }
+
+                    .kar {
+                        font-weight: 600;
+                    }
+                    .mca {
+                        // color: $text-color-green;
+                        font-weight: bold;
+                    }
+                }
+                .right-edu {
+                    width: 25%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .inside-box-round {
+                        width: 80%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: red;
+                        padding: 10px;
+                        border-radius: 30px;
+                        font-size: 1.2rem;
+                        color: white;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .right-education {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .rounds {
+                width: 600px;
+                height: 600px;
+                border-radius: 50%;
+                position: relative;
+                object-fit: contain;
+            }
+            .dummy {
+                position: absolute;
+                background-color: red;
+                width: 500px;
+                height: 500px;
+                border-radius: 70%;
+                top: 10px;
+                left: 15%;
+                opacity: 0.3;
+                animation: bounces1 3s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes bounces1 {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

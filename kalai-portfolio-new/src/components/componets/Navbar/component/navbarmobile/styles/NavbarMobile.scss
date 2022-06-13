@@ -1,0 +1,28 @@
+@use "../../../../../../scss/abstract/" as *;
+
+.offcanvas {
+    z-index: 9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+    overflow: hidden;
+
+    @include themed() {
+        background: t($background-liner-sets) !important;
+    }
+    .darkt {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+}
+
+@keyframes dars {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,64 @@
+@use "../../../../scss/abstract/" as *;
+.footer-main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .wave {
+        position: absolute;
+        bottom: 0;
+    }
+    .lasts {
+        position: absolute;
+        bottom: 18%;
+        right: 18%;
+    }
+    .copys {
+        font-size: 1.3rem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 2%;
+        left: 35%;
+        color: orangered;
+    }
+    .stars1 {
+        position: absolute;
+        top: 8%;
+        font-size: 1.8rem;
+        color: green;
+        left: 10%;
+        animation: tr 3s ease-in infinite;
+    }
+    .stars2 {
+        position: absolute;
+        bottom: 15%;
+        font-size: 1.8rem;
+        color: orange;
+        left: 25%;
+        animation: tr 3s ease-in infinite;
+    }
+    .stars3 {
+        position: absolute;
+        top: 25%;
+        font-size: 1.8rem;
+        color: blue;
+        right: 5%;
+        animation: tr 3s ease-in infinite;
+    }
+    .stars4 {
+        position: absolute;
+        top: 25%;
+        font-size: 1.8rem;
+        color: orangered;
+        right: 55%;
+        animation: tr 3s ease-in infinite;
+    }
+    .stars5 {
+        position: absolute;
+     bottom:15%;
+        font-size: 1.8rem;
+        color: cyan;
+        right: 5%;
+        animation: tr 3s ease-in infinite;
+    }
+}
